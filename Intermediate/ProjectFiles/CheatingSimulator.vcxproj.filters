@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\CheatingSimulator.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{AD0F1286-FE57-4A3B-B3E6-62733508D24A}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\CheatingSimulator.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\CheatingSimulatorEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{D7FFC6F7-FDB7-4A7C-98E0-2BA637DB5A88}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\CheatingSimulator">
+			<UniqueIdentifier>{D1DE84AF-9871-416F-B971-A14720324330}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\CheatingSimulator\CheatingSimulator.Build.cs">
+			<Filter>Source\CheatingSimulator</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\CheatingSimulator\CheatingSimulator.cpp">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\CheatingSimulator\CheatingSimulator.h">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\CheatingSimulator\CheatingSimulatorCharacter.cpp">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\CheatingSimulator\CheatingSimulatorCharacter.h">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\CheatingSimulator\CheatingSimulatorGameMode.cpp">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\CheatingSimulator\CheatingSimulatorGameMode.h">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>

@@ -16,7 +16,7 @@ ACheatingSimulatorCharacter::ACheatingSimulatorCharacter()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
-
+	bIsCrouched = false;
 	// set our turn rates for input
 	BaseTurnRate = 45.f;
 	BaseLookUpRate = 45.f;
@@ -60,7 +60,7 @@ void ACheatingSimulatorCharacter::SetupPlayerInputComponent(class UInputComponen
 	PlayerInputComponent->BindAxis("MoveForward", this, &ACheatingSimulatorCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACheatingSimulatorCharacter::MoveRight);
 
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACheatingSimulatorCharacter::Crouch);
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ACheatingSimulatorCharacter::ToggleCrouch);
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
@@ -77,16 +77,18 @@ void ACheatingSimulatorCharacter::SetupPlayerInputComponent(class UInputComponen
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACheatingSimulatorCharacter::OnResetVR);
 }
 
-void ACheatingSimulatorCharacter::Crouch()
+void ACheatingSimulatorCharacter::ToggleCrouch()
 {
 	if (bIsCrouched == true)
 	{
 		bIsCrouched = false;
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Some debug message!"));
 	}
 	
 	else
 	{
 		bIsCrouched = true;
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Reds, TEXT("Some debug message!"));
 	}
 }
 

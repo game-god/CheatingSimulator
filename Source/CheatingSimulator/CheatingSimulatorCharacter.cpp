@@ -60,7 +60,7 @@ void ACheatingSimulatorCharacter::SetupPlayerInputComponent(class UInputComponen
 	PlayerInputComponent->BindAxis("MoveForward", this, &ACheatingSimulatorCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACheatingSimulatorCharacter::MoveRight);
 
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Crouch);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACheatingSimulatorCharacter::Crouch);
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
@@ -77,6 +77,18 @@ void ACheatingSimulatorCharacter::SetupPlayerInputComponent(class UInputComponen
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ACheatingSimulatorCharacter::OnResetVR);
 }
 
+void ACheatingSimulatorCharacter::Crouch()
+{
+	if (bIsCrouched == true)
+	{
+		bIsCrouched = false;
+	}
+	
+	else
+	{
+		bIsCrouched = true;
+	}
+}
 
 void ACheatingSimulatorCharacter::OnResetVR()
 {

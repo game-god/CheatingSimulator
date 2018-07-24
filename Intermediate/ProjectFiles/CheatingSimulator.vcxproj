@@ -568,6 +568,8 @@
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
+		<ClCompile Include="..\..\Source\CheatingSimulator\CheatingSimPlayerController.cpp" />
+		<ClInclude Include="..\..\Source\CheatingSimulator\CheatingSimPlayerController.h" />
 		<None Include="..\..\Source\CheatingSimulator\CheatingSimulator.Build.cs" />
 		<ClCompile Include="..\..\Source\CheatingSimulator\CheatingSimulator.cpp" />
 		<ClInclude Include="..\..\Source\CheatingSimulator\CheatingSimulator.h" />

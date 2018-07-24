@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\CheatingSimulator.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{AD0F1286-FE57-4A3B-B3E6-62733508D24A}</UniqueIdentifier>
+			<UniqueIdentifier>{4CDA9BC0-DA11-4EA8-B9B7-F37A238FCCB9}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\CheatingSimulator.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{D7FFC6F7-FDB7-4A7C-98E0-2BA637DB5A88}</UniqueIdentifier>
+			<UniqueIdentifier>{D5DD7FF0-C8C1-4F16-8B8C-0094AE6FB034}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\CheatingSimulator">
-			<UniqueIdentifier>{D1DE84AF-9871-416F-B971-A14720324330}</UniqueIdentifier>
+			<UniqueIdentifier>{5D3F0F84-E26D-47E3-8663-723655FA1AAC}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\CheatingSimulator\CheatingSimPlayerController.cpp">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\CheatingSimulator\CheatingSimPlayerController.h">
+			<Filter>Source\CheatingSimulator</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\CheatingSimulator\CheatingSimulator.Build.cs">
 			<Filter>Source\CheatingSimulator</Filter>
 		</None >

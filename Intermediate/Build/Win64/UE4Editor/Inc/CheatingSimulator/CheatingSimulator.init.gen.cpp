@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeCheatingSimulator_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/CheatingSimulator",
 				PKG_CompiledIn | 0x00000000,
-				0x2484D7E1,
-				0x6339F366,
+				0x2AC39924,
+				0x9F3A90AB,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};
